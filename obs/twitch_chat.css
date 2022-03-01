@@ -1,26 +1,15 @@
 /**
- *  https://www.twitch.tv/popout/openfirmware/chat?darkpopout
- * 
+ * https://www.twitch.tv/popout/<username>/chat
+ * https://psyvern.github.io/obs/twitch_chat.css
+ *
  * General Settings 
  */
 body {
     background: rgba(0,0,0,0) !important;
 }
 
-/*div.twilight-minimal-root {
-  background-image: url("http://127.0.0.1:5000/output.gif");
-}*/
-
-div.twilight-minimal-root, div.popout-chat-page, section.chat-room {
+div.popout-chat-page, section.chat-room {
     background: rgba(0,0,0,0) !important;
-}
-
-/*
- * Remove Overflow
- */
-.simplebar-scroll-content, .simplebar-content {
-    padding: 0 !important;
-    margin: 0 !important;
 }
 
 /** 
@@ -51,31 +40,23 @@ img.chat-badge[alt="Verified"] {
 }
 */
 
-/**
- * Remove the header section
- */
+/* Header */
 div.stream-chat-header {
     display: none !important;
 }
 
-/**
- * Hide Welcome Message
- */
-.chat-line__status[data-a-target="chat-welcome-message"] {
-    display: none;
-}
-
-/**
- * Hide New Message
- */
-.chat-line__message:not([data-a-target="chat-line-message"]) {
+/* Footer */
+div.chat-input {
     display: none !important;
 }
 
-/** 
- * Remove the footer section
- */
-div.chat-input {
+/* Welcome message */
+.chat-line__status[data-a-target="chat-welcome-message"] {
+    display: none !important;
+}
+
+/* New message */
+.chat-line__message:not([data-a-target="chat-line-message"]) {
     display: none !important;
 }
 
@@ -83,9 +64,9 @@ div.chat-input {
  * Chat line box
  */
 div.chat-line__message {
-    margin: 0.25rem;
-    padding: 0.25rem 0.5rem;
-    background-color: rgba(0,0,0, 0.7);
+    margin: 3px;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
     border-radius: 3px;
 }
 
@@ -94,4 +75,40 @@ div.chat-line__message {
  */
 span.text-fragment {
     color: #FFFFFF;
+}
+
+:root {
+    font-size: 1em;
+}
+
+.chat-list--default {
+    line-height: inherit;
+}
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: translate(0, 50px);
+    }
+    to {
+        opacity: 1;
+        transform: none;    
+    }
+}
+
+.chat-line__message {
+    animation-name: zoomIn; /* this is the animation we are choosing to use */
+    animation-duration: 0.5s;
+}
+
+-webkit-scrollbar {
+    display: none;
+}
+
+.simplebar-track {
+    display: none;
+}
+
+.chat-scrollable-area__message-container {
+    padding-bottom: 3px;
 }
