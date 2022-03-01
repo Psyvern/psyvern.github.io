@@ -4,7 +4,6 @@
  * General Settings 
  */
 body {
-    color: #FFFFFF;
     background: rgba(0,0,0,0) !important;
 }
 
@@ -14,7 +13,14 @@ body {
 
 div.twilight-minimal-root, div.popout-chat-page, section.chat-room {
     background: rgba(0,0,0,0) !important;
-    color: #FFFFFF !important;
+}
+
+/*
+ * Remove Overflow
+ */
+.simplebar-content {
+
+    margin: 0 !important;
 }
 
 /** 
@@ -77,11 +83,10 @@ div.chat-input {
  * Chat line box
  */
 div.chat-line__message {
-    margin: 0.5rem;
-    padding: 0.2rem 0.5rem;
+    margin: 0.25rem;
+    padding: 0.25rem 0.5rem;
     background-color: rgba(0,0,0, 0.7);
-
-    border-radius: 10px;
+    border-radius: 3px;
 }
 
 /**
