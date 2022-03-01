@@ -4,17 +4,15 @@
  * General Settings 
  */
 body {
-  color: #FFFFFF;
-  background: rgba(0,0,0,0) !important;
+    color: #FFFFFF;
+    background: rgba(0,0,0,0) !important;
 }
 
 /*div.twilight-minimal-root {
   background-image: url("http://127.0.0.1:5000/output.gif");
 }*/
 
- div.twilight-minimal-root, 
-div.popout-chat-page,
-section.chat-room {
+div.twilight-minimal-root, div.popout-chat-page, section.chat-room {
     background: rgba(0,0,0,0) !important;
     color: #FFFFFF !important;
 }
@@ -26,7 +24,6 @@ section.chat-room {
  * copy of the one of the following badge selectors and replace the word 
  * in between the quotes with the hover text
  */
-
 /*
 img.chat-badge[alt="Broadcaster"] {
     display: none;
@@ -48,15 +45,10 @@ img.chat-badge[alt="Verified"] {
 }
 */
 
-img.chat-badge {
-    display: none;
-}
-
-
 /**
  * Remove the header section
  */
-div.rooms-header {
+div.stream-chat-header {
     display: none !important;
 }
 
@@ -67,10 +59,16 @@ div.rooms-header {
     display: none;
 }
 
+/**
+ * Hide New Message
+ */
+.chat-line__message:not([data-a-target="chat-line-message"]) {
+    display: none !important;
+}
+
 /** 
  * Remove the footer section
  */
-
 div.chat-input {
     display: none !important;
 }
@@ -79,16 +77,16 @@ div.chat-input {
  * Chat line box
  */
 div.chat-line__message {
-  margin: 0.5rem;
-  padding: 0.2rem 0.5rem;
-  background-color: rgba(0,0,0, 0.7);
+    margin: 0.5rem;
+    padding: 0.2rem 0.5rem;
+    background-color: rgba(0,0,0, 0.7);
 
-  border-radius: 10px;
+    border-radius: 10px;
 }
 
 /**
  * Font Size & Color
  */
 span.text-fragment {
-    color: #CCC;
+    color: #FFFFFF;
 }
