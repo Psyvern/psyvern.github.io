@@ -110,5 +110,5 @@ span.text-fragment {
 }
 
 .chat-scrollable-area__message-container {
-    padding-bottom: 3px;
+    padding-bottom: 0;
 }
