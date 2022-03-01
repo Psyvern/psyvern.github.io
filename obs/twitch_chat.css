@@ -5,7 +5,7 @@
  * General Settings 
  */
 body {
-    background: rgba(0,0,0,0) !important;
+    background: linear-gradient(45deg, rgba(255,0,100,1) 0%, rgba(0,100,255,1) 100%) !important;
 }
 
 div.popout-chat-page, section.chat-room {
