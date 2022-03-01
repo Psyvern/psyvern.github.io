@@ -18,8 +18,8 @@ div.twilight-minimal-root, div.popout-chat-page, section.chat-room {
 /*
  * Remove Overflow
  */
-.simplebar-content {
-
+.simplebar-scroll-content, .simplebar-content {
+    padding: 0 !important;
     margin: 0 !important;
 }
 
