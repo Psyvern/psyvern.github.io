@@ -1,0 +1,94 @@
+/**
+ *  https://www.twitch.tv/popout/openfirmware/chat?darkpopout
+ * 
+ * General Settings 
+ */
+body {
+  color: #FFFFFF;
+  background: rgba(0,0,0,0) !important;
+}
+
+/*div.twilight-minimal-root {
+  background-image: url("http://127.0.0.1:5000/output.gif");
+}*/
+
+ div.twilight-minimal-root, 
+div.popout-chat-page,
+section.chat-room {
+    background: rgba(0,0,0,0) !important;
+    color: #FFFFFF !important;
+}
+
+/** 
+ * Badge Removal
+ *
+ * To remove additional badge types - moderator, bits, etc - just make a 
+ * copy of the one of the following badge selectors and replace the word 
+ * in between the quotes with the hover text
+ */
+
+/*
+img.chat-badge[alt="Broadcaster"] {
+    display: none;
+}
+img.chat-badge[alt="Moderator"] {
+    display: none;
+}
+img.chat-badge[alt="Subscriber"] {
+    display: none;
+}
+img.chat-badge[alt="Twitch Prime"] {
+    display: none;
+}
+img.chat-badge[alt="Turbo"] {
+    display: none;
+}
+img.chat-badge[alt="Verified"] {
+    display: none;
+}
+*/
+
+img.chat-badge {
+    display: none;
+}
+
+
+/**
+ * Remove the header section
+ */
+div.rooms-header {
+    display: none !important;
+}
+
+/**
+ * Hide Welcome Message
+ */
+.chat-line__status[data-a-target="chat-welcome-message"] {
+    display: none;
+}
+
+/** 
+ * Remove the footer section
+ */
+
+div.chat-input {
+    display: none !important;
+}
+
+/**
+ * Chat line box
+ */
+div.chat-line__message {
+  margin: 0.5rem;
+  padding: 0.2rem 0.5rem;
+  background-color: rgba(0,0,0, 0.7);
+
+  border-radius: 10px;
+}
+
+/**
+ * Font Size & Color
+ */
+span.text-fragment {
+    color: #CCC;
+}
