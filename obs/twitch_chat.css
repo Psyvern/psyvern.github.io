@@ -112,3 +112,7 @@ span.text-fragment {
 .chat-scrollable-area__message-container {
     padding-bottom: 0;
 }
+
+.mention-fragment {
+    font-weight: 900;
+}
